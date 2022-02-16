@@ -1,0 +1,544 @@
+nohup: les entrées sont ignorées
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /home/rbh/wildfly-21.0.2.Final-20220216-16h48
+
+  JAVA: /home/rbh/jdk-11.0.9/bin/java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true  --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED
+
+=========================================================================
+
+[0m16:49:04,843 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.2.Final
+[0m[0m16:49:05,598 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+[0m[0m16:49:05,606 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+[0m[0m16:49:05,708 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 21.0.2.Final (WildFly Core 13.0.3.Final) starting
+[0m[0m16:49:06,464 INFO  [org.wildfly.security] (ServerService Thread Pool -- 23) ELY00001: WildFly Elytron version 1.13.1.Final
+[0m[0m16:49:07,277 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m16:49:07,324 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m16:49:08,202 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 6) WFLYDR0001: Content added at location /home/rbh/wildfly-21.0.2.Final-20220216-16h48/standalone/data/content/7f/21558d2f9baf859fe13514f03c9a2b3464b0fd/content
+[0m[0m16:49:08,296 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m16:49:08,372 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.8.2.Final
+[0m[0m16:49:08,385 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.8.2.Final
+[0m[0m16:49:08,466 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m16:49:08,513 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+[0m[0m16:49:08,535 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m16:49:08,554 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+[0m[0m16:49:08,653 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+[0m[0m16:49:08,655 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+[0m[0m16:49:08,561 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[33m16:49:08,561 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m16:49:08,550 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.13.2.Final
+[0m[0m16:49:08,665 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+[0m[0m16:49:08,669 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+[0m[0m16:49:08,690 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00006
+[0m[0m16:49:08,751 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+[0m[0m16:49:08,761 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+[0m[0m16:49:08,835 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.23.Final)
+[0m[0m16:49:09,061 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m16:49:09,061 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+[0m[0m16:49:09,109 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+[0m[0m16:49:09,117 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = mysql
+[0m[0m16:49:09,119 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m16:49:09,122 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m16:49:09,252 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.19.Final
+[0m[0m16:49:09,430 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.2.2.Final starting
+[0m[0m16:49:09,751 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+[0m[0m16:49:09,755 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/rbh/wildfly-21.0.2.Final-20220216-16h48/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m16:49:09,770 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+[0m[0m16:49:10,065 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m16:49:10,157 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m16:49:10,158 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m16:49:10,346 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m16:49:10,551 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0157]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0132]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0162]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0173]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0183]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0141]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0150]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0199]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0165]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0177]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0136]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/main0132]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0136]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/main0113]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0144]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0184]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0111]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0118]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0175]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0168]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0190]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0119]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0159]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0112]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0196]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0102]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0160]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0145]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0122]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0163]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0193]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0135]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0166]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0148]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0161]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0183]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0195]
+[0m[0m16:49:10,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0194]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0193]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0134]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0151]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0144]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0142]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0107]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0109]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0173]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0129]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0133]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0190]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0164]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0195]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0101]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0159]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0117]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0174]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0102]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0105]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0110]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0169]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0176]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0120]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0114]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0145]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0124]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0172]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0143]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0196]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0154]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0119]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0179]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0137]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0179]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0104]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0178]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0116]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0147]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0107]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0109]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0175]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0126]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0180]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0112]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0130]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/blobs0121]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0198]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0180]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0138]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/blobs0138]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0161]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0150]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0146]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0153]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0186]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/secondary0101]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0108]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0153]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0158]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0148]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0160]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0120]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0151]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0187]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0194]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0176]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0192]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0137]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0192]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0191]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0181]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0127]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/primary0101]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0103]
+[0m[0m16:49:10,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0198]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0139]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0170]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0154]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0123]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0128]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0133]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0108]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0188]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0140]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0187]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0184]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0118]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0143]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0115]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0177]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0185]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0197]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0186]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0106]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0123]
+[0m[0m16:49:10,568 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0158]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0106]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0197]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0111]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0167]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0170]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0105]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0129]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0165]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0182]
+[0m[0m16:49:10,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0163]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0162]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0125]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0168]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0157]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0139]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/main0164]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0103]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/blobs0115]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:/blobs0167]
+[0m[0m16:49:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0171]
+[0m[0m16:49:10,570 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/main0199]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0104]
+[0m[0m16:49:10,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0182]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0156]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0152]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0131]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0181]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0135]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0191]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0149]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/blobs0171]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0188]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0110]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/main0121]
+[0m[0m16:49:10,566 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/main0131]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0113]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0122]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0155]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0130]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0114]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0117]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0155]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0185]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0127]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0189]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0172]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0166]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/main0134]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0141]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0152]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0189]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0147]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0142]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0178]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0128]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/main0156]
+[0m[0m16:49:10,575 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0116]
+[0m[0m16:49:10,576 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:/blobs0126]
+[0m[0m16:49:10,576 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0140]
+[0m[0m16:49:10,576 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0146]
+[0m[0m16:49:10,576 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/blobs0169]
+[0m[0m16:49:10,577 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0149]
+[0m[0m16:49:10,577 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/main0174]
+[0m[33m16:49:10,582 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/rbh/wildfly-21.0.2.Final-20220216-16h48/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m16:49:10,583 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/rbh/wildfly-21.0.2.Final-20220216-16h48/standalone/deployments
+[0m[0m16:49:10,577 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/blobs0124]
+[0m[0m16:49:10,576 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/main0125]
+[0m[0m16:49:10,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/main0101]
+[0m[0m16:49:10,751 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "en74-t2-0.0.1-SNAPSHOT.war" (runtime-name: "en74-t2-0.0.1-SNAPSHOT.war")
+[0m[0m16:49:11,362 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[0m16:49:13,638 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.2.Final (Apache CXF 3.3.7) 
+[0m[33m16:49:15,956 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m16:49:15,959 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+[0m[33m16:49:15,959 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+[0m[33m16:49:15,960 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m16:49:15,962 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m16:49:15,963 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component io.micrometer.core.instrument.binder.jetty.OnCompletionAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[0m16:49:16,339 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+[0m[33m16:49:16,340 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment en74-t2-0.0.1-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m16:49:16,632 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = en74-t2-0.0.1-SNAPSHOT.war_com.mysql.cj.jdbc.Driver_8_0
+[0m[0m16:49:18,637 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.4.Final
+[0m[0m16:49:18,757 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:49:18,759 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:49:18,882 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+[0m[0m16:49:19,130 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+[0m[0m16:49:19,400 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 82) 2 Spring WebApplicationInitializers detected on classpath
+[0m[0m16:49:19,759 INFO  [stdout] (ServerService Thread Pool -- 82) 
+[0m[0m16:49:19,759 INFO  [stdout] (ServerService Thread Pool -- 82)   .   ____          _            __ _ _
+[0m[0m16:49:19,759 INFO  [stdout] (ServerService Thread Pool -- 82)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[0m[0m16:49:19,759 INFO  [stdout] (ServerService Thread Pool -- 82) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[0m[0m16:49:19,760 INFO  [stdout] (ServerService Thread Pool -- 82)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[0m[0m16:49:19,760 INFO  [stdout] (ServerService Thread Pool -- 82)   '  |____| .__|_| |_|_| |_\__, | / / / /
+[0m[0m16:49:19,760 INFO  [stdout] (ServerService Thread Pool -- 82)  =========|_|==============|___/=/_/_/_/
+[0m[0m16:49:19,760 INFO  [stdout] (ServerService Thread Pool -- 82)  :: Spring Boot ::                (v2.6.3)
+[0m[0m16:49:19,760 INFO  [stdout] (ServerService Thread Pool -- 82) 
+[0m[0m16:49:19,789 INFO  [org.hibernate.validator.internal.util.Version] (background-preinit) HV000001: Hibernate Validator 6.0.21.Final
+[0m[0m16:49:19,816 INFO  [com.aihfl.en74t2.ServletInitializer] (ServerService Thread Pool -- 82) Starting ServletInitializer using Java 11.0.9 on rbh-OMEN-by-HP-Laptop-17-an0xx with PID 73202 (started by rbh in /home/rbh/svn06/master/en74/en74-t2)
+[0m[0m16:49:19,816 INFO  [com.aihfl.en74t2.ServletInitializer] (ServerService Thread Pool -- 82) No active profile set, falling back to default profiles: default
+[0m[0m16:49:20,630 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 82) Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0m[0m16:49:20,641 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 82) Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+[0m[0m16:49:20,885 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 82) Initializing Spring embedded WebApplicationContext
+[0m[0m16:49:20,886 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 82) Root WebApplicationContext: initialization completed in 1026 ms
+[0m[0m16:49:21,356 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 82) HikariPool-1 - Starting...
+[0m[0m16:49:21,864 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 82) HikariPool-1 - Start completed.
+[0m[0m16:49:21,979 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:49:21,981 INFO  [com.aihfl.en74t2.ServletInitializer] (ServerService Thread Pool -- 82) Started ServletInitializer in 2.512 seconds (JVM running for 17.762)
+[0m[0m16:49:21,986 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:49:22,184 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 82) Initialisation de Mojarra 2.3.14.SP01 pour le contexte «/en74-t2-0.0.1-SNAPSHOT»
+[0m[0m16:49:23,061 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/en74-t2-0.0.1-SNAPSHOT' for server 'default-server'
+[0m[0m16:49:23,494 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "en74-t2-0.0.1-SNAPSHOT.war" (runtime-name : "en74-t2-0.0.1-SNAPSHOT.war")
+[0m[0m16:49:23,550 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m16:49:23,555 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 21.0.2.Final (WildFly Core 13.0.3.Final) started in 19248ms - Started 1940 of 2165 services (575 services are lazy, passive or on-demand)
+[0m[0m16:49:23,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m16:49:23,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m16:49:31,988 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:49:31,989 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:49:41,989 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:49:41,990 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:49:51,990 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:49:51,998 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:01,999 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:50:01,999 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:12,000 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:50:12,000 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:22,001 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:50:22,002 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:32,002 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:50:32,003 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:42,004 INFO  [stdout] (scheduling-1) Scheduled is working
+[0m[0m16:50:42,005 INFO  [com.aihfl.en74t2.main.LogWriter] (scheduling-1) Scheduled is working
+[0m[0m16:50:43,218 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+[0m[0m16:50:43,222 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m16:50:43,963 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+[0m[0m16:50:43,998 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = en74-t2-0.0.1-SNAPSHOT.war_com.mysql.cj.jdbc.Driver_8_0
+[0m[0m16:50:44,002 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0139]
+[0m[0m16:50:44,005 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0138]
+[0m[0m16:50:44,005 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0137]
+[0m[0m16:50:44,011 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0136]
+[0m[0m16:50:44,012 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0199]
+[0m[0m16:50:44,012 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0198]
+[0m[0m16:50:44,012 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0195]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0194]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0197]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0196]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0190]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0193]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0192]
+[0m[0m16:50:44,014 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0191]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0188]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0187]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0189]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0184]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0183]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0186]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0185]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0180]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0182]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0181]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/blobs0107]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/blobs0106]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0109]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/blobs0108]
+[0m[0m16:50:44,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/blobs0103]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/blobs0102]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0104]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/blobs0101]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0131]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0130]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0105]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0135]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0129]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0128]
+[0m[0m16:50:44,016 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0134]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0125]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0124]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0127]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0121]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0126]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0133]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0120]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0123]
+[0m[0m16:50:44,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0122]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0118]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0117]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0119]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0114]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0113]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0116]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0115]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0110]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/blobs0112]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0111]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0151]
+[0m[0m16:50:44,018 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0150]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0152]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0153]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0154]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0155]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0156]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0158]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0157]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0159]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0160]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0161]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0162]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0163]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0164]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0165]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0166]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0167]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0168]
+[0m[0m16:50:44,019 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0169]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0170]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0171]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0172]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0173]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0174]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0175]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0176]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0177]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/main0178]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0179]
+[0m[0m16:50:44,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/primary0101]
+[0m[0m16:50:44,021 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/secondary0101]
+[0m[0m16:50:44,021 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m16:50:44,021 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/main0132]
+[0m[0m16:50:44,021 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0148]
+[0m[0m16:50:44,021 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0147]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0149]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0144]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0128]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0143]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0127]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0145]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0146]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0142]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0140]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0141]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0126]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0125]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0129]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0120]
+[0m[0m16:50:44,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0124]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0123]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0122]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0121]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0117]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0116]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0115]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0114]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0119]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0118]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0113]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0112]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0111]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0110]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0106]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0105]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0104]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0103]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0109]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/main0108]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:/main0107]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/main0102]
+[0m[0m16:50:44,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/main0101]
+[0m[0m16:50:44,024 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 6) WFLYUT0022: Unregistered web context: '/en74-t2-0.0.1-SNAPSHOT' from server 'default-server'
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0149]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0146]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0147]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0148]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0143]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0142]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0145]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0144]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0141]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0140]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0139]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0136]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0135]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0138]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0137]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0132]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0131]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0134]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0133]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0130]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0169]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0168]
+[0m[0m16:50:44,026 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0165]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0164]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0167]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0166]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0161]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0160]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0163]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0162]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0158]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0157]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0159]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0154]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0153]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0156]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0150]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0152]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0155]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0151]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0187]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0186]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0189]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0188]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0183]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0182]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0185]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0184]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0181]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0180]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0179]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0176]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0175]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0178]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0177]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0172]
+[0m[0m16:50:44,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0171]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0174]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0170]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0198]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0197]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0173]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0199]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0194]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0193]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0195]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0196]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0190]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/blobs0192]
+[0m[0m16:50:44,028 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:/blobs0191]
+[0m[0m16:50:44,062 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+[0m[0m16:50:44,065 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 6) Closing Spring root WebApplicationContext
+[0m[0m16:50:44,068 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 6) HikariPool-1 - Shutdown initiated...
+[0m[0m16:50:44,091 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 6) HikariPool-1 - Shutdown completed.
+[0m[33m16:50:44,094 WARNING [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 6) Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+[0m[0m16:50:44,097 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+[0m[0m16:50:44,099 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m16:50:44,101 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m16:50:44,104 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 130) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+[0m[0m16:50:44,105 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 130) Stopping cache manager null on null
+[0m[0m16:50:44,129 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m16:50:44,129 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m16:50:44,129 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m16:50:44,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m16:50:44,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.2.Final stopping
+[0m[0m16:50:44,148 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment en74-t2-0.0.1-SNAPSHOT.war (runtime-name: en74-t2-0.0.1-SNAPSHOT.war) in 170ms
+[0m[0m16:50:44,186 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 21.0.2.Final (WildFly Core 13.0.3.Final) stopped in 207ms
+[0m
